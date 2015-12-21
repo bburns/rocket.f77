@@ -16,6 +16,12 @@ set nokey
 plot 'data\altitude.dat'
 
 
+set terminal png
+set out 'altitude.png'
+replot
+
+
+
 
 # plot 'data\velocity.dat'
 # plot 'data\acceleration.dat'

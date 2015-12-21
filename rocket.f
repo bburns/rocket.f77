@@ -89,26 +89,26 @@
         Endtime=1.e9
 *       (by setting Endtime=1.e9, we can watch the rocket crash)
 
-        open (unit=11,file='graph1.dat',status='new')
-        write (11,*) 'LINE NOMARKER XFORMAT I3 YFORMAT I5'
-        write (11,*) 'TITLE "ALTITUDE VS. TIME"'
-        write (11,*) 'XLABEL "TIME (SEC)"'
-        write (11,*) 'YLABEL "ALTITUDE (METERS)"'
-        write (11,*) 'NEWPEN 2'
+        open (unit=11,file='data\altitude.dat',status='new')
+        write (11,*) '# LINE NOMARKER XFORMAT I3 YFORMAT I5'
+        write (11,*) '# TITLE "ALTITUDE VS. TIME"'
+        write (11,*) '# XLABEL "TIME (SEC)"'
+        write (11,*) '# YLABEL "ALTITUDE (METERS)"'
+        write (11,*) '# NEWPEN 2'
 
-        open (unit=12,file='graph2.dat',status='new')
-        write (12,*) 'LINE NOMARKER XFORMAT I3 YFORMAT I5'
-        write (12,*) 'TITLE "VELOCITY VS. TIME"'
-        write (12,*) 'XLABEL "TIME (SEC)"'
-        write (12,*) 'YLABEL "VELOCITY (METERS/SEC)"'
-        write (12,*) 'NEWPEN 4'
+        open (unit=12,file='data\velocity.dat',status='new')
+        write (12,*) '# LINE NOMARKER XFORMAT I3 YFORMAT I5'
+        write (12,*) '# TITLE "VELOCITY VS. TIME"'
+        write (12,*) '# XLABEL "TIME (SEC)"'
+        write (12,*) '# YLABEL "VELOCITY (METERS/SEC)"'
+        write (12,*) '# NEWPEN 4'
         
-        open (unit=13,file='graph3.dat',status='new')
-        write (13,*) 'LINE NOMARKER XFORMAT I3 YFORMAT I5'
-        write (13,*) 'TITLE "ACCELERATION VS. TIME"'
-        write (13,*) 'XLABEL "TIME (SEC)"'
-        write (13,*) 'YLABEL "ACCELERATION (METERS/SEC/SEC)"'
-        write (13,*) 'NEWPEN 3'
+        open (unit=13,file='data\acceleration.dat',status='new')
+        write (13,*) '# LINE NOMARKER XFORMAT I3 YFORMAT I5'
+        write (13,*) '# TITLE "ACCELERATION VS. TIME"'
+        write (13,*) '# XLABEL "TIME (SEC)"'
+        write (13,*) '# YLABEL "ACCELERATION (METERS/SEC/SEC)"'
+        write (13,*) '# NEWPEN 3'
 
 *-------------------------------------------------------------------------
 *       Main Program
@@ -155,9 +155,9 @@
 
 200     continue
 
-        write (11,*) 'NEWPEN 1'
-        write (12,*) 'NEWPEN 1'
-        write (13,*) 'NEWPEN 1'
+        write (11,*) '# NEWPEN 1'
+        write (12,*) '# NEWPEN 1'
+        write (13,*) '# NEWPEN 1'
 
         end
 
